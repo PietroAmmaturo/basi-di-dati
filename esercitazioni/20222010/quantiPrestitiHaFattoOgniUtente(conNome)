@@ -1,0 +1,9 @@
+SELECT
+    CodUtente,
+    Nome,
+    count(*)
+FROM
+    Prestito P
+    JOIN Utente U ON P.CodUtente = U.Codice
+GROUP BY
+    CodUtente
